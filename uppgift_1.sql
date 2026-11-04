@@ -4,7 +4,8 @@ CREATE TABLE movie (
 );
 CREATE TABLE actor (
     actor_id SERIAL PRIMARY KEY,
-    name VARCHAR(100) NOT NULL
+    name VARCHAR(100) NOT NULL,
+    movie_id INT REFERENCES movie(movie_id)
 );
 CREATE TABLE director (
     director_id SERIAL PRIMARY KEY,
