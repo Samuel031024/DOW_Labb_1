@@ -18,6 +18,13 @@ CREATE TABLE actor (
     name VARCHAR(100) NOT NULL
 );
 
+CREATE TABLE movie_cast (
+    movie_id INT REFERENCES movie(movie_id) ON DELETE CASCADE,
+    actor_id INT REFERENCES actor(actor_id) ON DELETE CASCADE,
+    role_name VARCHAR(100),
+    PRIMARY KEY (movie_id, actor_id)
+);
+
 INSERT INTO movie (name)
 VALUES ('Inception'), ('The Dark Knight'), ('Interstellar');
 INSERT INTO actor (name, actor_id)
