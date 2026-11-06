@@ -24,13 +24,15 @@ CREATE TABLE movie_cast (
     role_name VARCHAR(100),
     PRIMARY KEY (movie_id, actor_id)
 );
+INSERT INTO director (name)
+VALUES ('Christopher Nolan');
+INSERT INTO actor (name)
+VALUES ('Leonardo DiCaprio'), ('Christian Bale'), ('Matthew McConaughey');
 
-INSERT INTO movie (name)
-VALUES ('Inception'), ('The Dark Knight'), ('Interstellar');
-INSERT INTO actor (name, actor_id)
-VALUES ('Leonardo DiCaprio', 1), ('Christian Bale', 2), ('Matthew McConaughey', 3);
-INSERT INTO director (name, director_id)
-VALUES ('Christopher Nolan', 1), ('Christopher Nolan', 2), ('Christopher Nolan', 3);
+INSERT INTO movie (name, director_id)
+VALUES ('Inception', 1), ('The Dark Knight', 1), ('Interstellar', 1);
+
+
 
 
 
