@@ -71,3 +71,9 @@ UPDATE products
 SET unit_price = unit_price * 1.20
 WHERE category_id = '4';
 
+SELECT product_id, product_name, unit_price, category_id, suppliers.company_name
+FROM products
+JOIN suppliers ON (suppliers.supplier_id = products.supplier_id)
+WHERE suppliers.company_name = 'Tokyo Traders';
+
+
