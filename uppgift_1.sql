@@ -42,6 +42,8 @@ WHERE movie_id = 1 AND actor_id = 1;
 INSERT INTO movie_cast (movie_id, actor_id, role_name)
 VALUES (1, 1, 'Cobb');
 
+
+
 UPDATE movie_cast
 SET role_name = 'Dom Cobb'
 WHERE movie_id = 1 AND actor_id = 1;
