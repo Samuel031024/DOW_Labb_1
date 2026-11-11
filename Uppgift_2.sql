@@ -12,6 +12,8 @@ FROM employees
 ORDER BY birth_date DESC;
 
 SELECT *
-FROM customers
-ORDER BY country, city;
+FROM employees
+WHERE last_name LIKE '%an%';
+
+
 
