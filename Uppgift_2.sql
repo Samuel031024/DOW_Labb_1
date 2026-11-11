@@ -58,5 +58,12 @@ SELECT COUNT(title) AS amount
 FROM employees
 WHERE title = 'Sales Representative';
 
+SELECT SUM(order_details.unit_price*order_details.quantity)
+FROM orders
+JOIN order_details ON (orders.order_id = order_details.order_id)
+WHERE orders.order_date = '1996-12-12';
+
+
+
 
 
