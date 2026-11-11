@@ -63,11 +63,11 @@ FROM orders
 JOIN order_details ON (orders.order_id = order_details.order_id)
 WHERE orders.order_date = '1996-12-12';
 
-SELECT products.unit_price, categories.category_id
+SELECT product_id, product_name, unit_price, category_id
 FROM products
-JOIN categories ON products.category_id = categories.category_id
-WHERE categories.category_id = '4'
+WHERE category_id = 4;
 
-
-
+UPDATE products
+SET unit_price = unit_price * 1.20
+WHERE category_id = '4';
 
