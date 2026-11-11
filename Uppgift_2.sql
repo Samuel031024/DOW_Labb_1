@@ -16,4 +16,11 @@ FROM employees
 WHERE last_name LIKE '%an%';
 
 
+SELECT *
+FROM employees
+WHERE title LIKE '%Vice%' OR '%President%' OR '%Manager%';
+
+
+
+
 
