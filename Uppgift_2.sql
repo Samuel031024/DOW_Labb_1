@@ -54,5 +54,9 @@ JOIN products ON (products.product_id = order_details.product_id)
 JOIN suppliers ON (suppliers.supplier_id = products.supplier_id)
 WHERE order_id = '10249';
 
+SELECT COUNT(title) AS amount
+FROM employees
+WHERE title = 'Sales Representative';
+
 
 
