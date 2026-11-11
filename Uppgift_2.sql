@@ -48,6 +48,8 @@ FROM suppliers
 JOIN products ON (products.supplier_id = suppliers.supplier_id)
 WHERE product_name = 'Gravad lax';
 
+SELECT products.product_name, suppliers.company_name
+FROM 
 
 
 
