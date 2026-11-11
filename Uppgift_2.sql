@@ -26,5 +26,8 @@ unit_price,
 unit_price * 1.07 AS new_price
 FROM products;
 
+SELECT product_name, unit_price * units_in_stock AS stock_val
+FROM products
+
 
 
