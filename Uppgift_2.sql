@@ -18,7 +18,7 @@ WHERE last_name LIKE '%an%';
 
 SELECT *
 FROM employees
-WHERE title LIKE '%Vice%' OR '%President%' OR '%Manager%';
+WHERE title LIKE '%Vice%' OR title LIKE '%President%' OR title LIKE '%Manager%';
 
 
 
