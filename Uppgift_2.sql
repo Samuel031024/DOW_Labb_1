@@ -76,4 +76,7 @@ FROM products
 JOIN suppliers ON (suppliers.supplier_id = products.supplier_id)
 WHERE suppliers.company_name = 'Tokyo Traders';
 
-
+UPDATE products
+SET unit_price = unit_price * 1.1
+FROM suppliers
+WHERE products.supplier_id = suppliers.supplier_id AND suppliers.company_name = 'Tokyo Traders';
