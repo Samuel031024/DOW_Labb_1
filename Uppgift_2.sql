@@ -20,7 +20,11 @@ SELECT *
 FROM employees
 WHERE title LIKE '%Vice%' OR title LIKE '%President%' OR title LIKE '%Manager%';
 
-
+SELECT 
+product_name, 
+unit_price, 
+unit_price * 1.07 AS new_price
+FROM products;
 
 
 
